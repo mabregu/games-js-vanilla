@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+</head>
+    <body>
+        <h1>Juego de Piedra, Papel o Tijeras</h1>
+        
+        <div id="form">
+            <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" onkeyup="validarNombre()">
+            <div class="valid_name"></div>
+            <br>
+            <p>Elige una opción</p>
+            <input type="radio" name="opcion" value="0">
+            <label for="piedra">Piedra✊</label>
+            <input type="radio" name="opcion" value="1">
+            <label for="papel">Papel🖐</label>
+            <input type="radio" name="opcion" value="2">
+            <label for="tijeras">Tijeras✌</label>
+            <br>
+            <button id="btn_jugar" onclick="jugar()">Jugar</button>
+        </div>
+
+        <div id="result"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
